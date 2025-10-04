@@ -1,0 +1,58 @@
+body {
+      margin: 0;
+      height: 100vh; /* ia toată înălțimea ferestrei */
+      display: flex;
+      flex-direction: column; /* ca să pui textul deasupra input-ului */
+      justify-content: center; /* centrează pe verticală */
+      align-items: center;     /* centrează pe orizontală */
+      background: #e2effc;
+      font-family: Arial, sans-serif;
+    }
+
+.search-bar {
+      height: 40px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+}
+
+.drop-down {
+  height: 40px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.search-bar-title {
+  font-weight: bold;
+}
+
+.top-bar {
+  background-color: black;
+  position:fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.download-button {
+  padding: 10px;
+  background-color: green;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.download-button:active {
+  opacity: 50%;
+}

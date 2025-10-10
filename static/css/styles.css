@@ -1,0 +1,119 @@
+
+/* Background */
+
+
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, rgb(54, 34, 92), #1b263b, #415a77);
+  font-family: "Inter", Arial, sans-serif;
+  color: #fff;
+}
+
+/* Centered container */
+.wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Glassmorphism card */
+.card {
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.6);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 40px 50px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+  width: 400px;
+}
+
+/* Title styling */
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.accent {
+  color: #4cc9f0;
+}
+
+/* Input + dropdown alignment */
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+/* Input styling */
+.search-bar {
+  height: 45px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 0 15px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.search-bar::placeholder {
+  color: #b9c6d2;
+}
+
+.search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Dropdown styling */
+.drop-down {
+  height: 45px;
+  padding: 0 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+
+/* Button styling */
+.download-button {
+  height: 45px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgb(54, 34, 92), #48cae4);
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.download-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px #9850c9aa;
+}
+
+/* Footer */
+footer {
+  font-size: 13px;
+  opacity: 0.7;
+}

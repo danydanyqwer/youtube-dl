@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="styles.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube Downloader</title>
-  </head>
-  <body>
-    <form class="container">
-      <div class="search-bar-title">Youtube-DL</div>
-      <div>
-          <input name="linkyoutube" class="search-bar" type="search" placeholder="Input youtube.com link here...">
-          <select class="drop-down" name="extensions" id="extensions">
-            <option value="MP4">MP4</option>
-            <option value="MP3">MP3</option>
-          </select>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <h1 class="title">Youtube<span class="accent">DL</span></h1>
+            <form action="/" method="POST" class="form">
+                <div class="input-group">
+                    <input name="linkyoutube" id="search-bar-link" class="search-bar" type="text" placeholder="Paste YouTube link...">
+                    <select class="drop-down" name="extensions" id="extensions">
+                        <option value="MP4">MP4</option>
+                        <option value="M4A">M4A</option>
+                        
+                    </select>
+                </div>
+                <button class="download-button">Download</button>
+            </form>
         </div>
-      <button class="download-button">Download</button>
-    </form>
-  </body>
+        <footer>Made by Dan Grigorescu using Flask & PytubeFix</footer>
+    </div>
+</body>
 </html>
-

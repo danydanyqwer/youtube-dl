@@ -15,14 +15,3 @@ Interfață web simplă și intuitivă
 Suport pentru descărcarea progresivă a videoclipurilor
 
 Suport pentru descărcarea audio-only
-
-Instalare
-Cerințe
-
-Python 3.6 sau mai recent
-
-pip (Python package installer)
-
-Pași de instalare
-
-Clonează repository-ul:
